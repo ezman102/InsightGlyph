@@ -47,18 +47,13 @@ This project focuses on scraping tweets from X.com (formerly Twitter), extractin
    Download from: https://chromedriver.chromium.org/downloads
 
 ### **Install Dependencies**
-1. **Create a virtual environment** (optional but recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
 
-2. **Install required libraries**:
+1. **Install required libraries**:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Download NLTK Data** (stopwords and tokenizers):
+2. **Download NLTK Data** (stopwords and tokenizers):
    ```bash
    python -m nltk.downloader stopwords punkt -d ./nltk_data
    ```
@@ -121,13 +116,6 @@ To **add or modify categories**, update the `categories.json` file located in th
 
 ---
 
-## **Error Handling**
-- **Invalid URL**: If an invalid URL is provided, the scraper skips it.
-- **File Not Found**: If a required JSON file is missing, the script will display an error message.
-- **Invalid JSON Structure**: The program checks for valid `[word, frequency]` pairs when loading keywords.
-
----
-
 ## **Dependencies**
 - **Selenium**: Web scraping automation.
 - **BeautifulSoup**: HTML parsing.
@@ -137,34 +125,8 @@ To **add or modify categories**, update the `categories.json` file located in th
 
 ---
 
-## **Known Issues**
-1. **Rate Limits**: X.com may impose rate limits on scraping.
-2. **JavaScript Rendering**: Some content may not load properly due to dynamic rendering.
-3. **Chromedriver Compatibility**: Ensure that the **ChromeDriver version matches your installed Chrome browser**.
-
----
-
-## **Contributing**
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a pull request.
-
----
-
 ## **License**
 This project is licensed under the **MIT License** - see the `LICENSE` file for details.
-
----
-
-## **Contact**
-If you encounter any issues or have questions, please feel free to reach out.
-
----
-
-## **Conclusion**
-This project demonstrates a **simple yet effective way to extract insights from social media** using scraping, text preprocessing, and visualization techniques. Feel free to extend the project with new features or categories!
 
 ---
 
