@@ -1,0 +1,15 @@
+{
+    "World": ["https://x.com/CNN", "https://x.com/Reuters"],
+    "Business": ["https://x.com/federalreserve", "https://x.com/WSJ"],
+    "Arts": ["https://x.com/MetMuseum"],
+    "Lifestyle": ["https://x.com/VogueRunway"],
+    "Opinion": ["https://x.com/NYTOpinion"],
+    "Audio": ["https://x.com/Spotify"],
+    "Games": ["https://x.com/GameSpot", "https://x.com/IGN"],
+    "Cooking": ["https://x.com/nytcooking"],
+    "Wirecutter": ["https://x.com/wirecutter"],
+    "Sports": ["https://x.com/espn", "https://x.com/SkySports"], 
+    "Tech": ["https://x.com/TechCrunch", "https://x.com/wired"],
+    "Music": ["https://x.com/billboard", "https://x.com/rollingstone"]
+  }
+  
