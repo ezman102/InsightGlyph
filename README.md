@@ -1,1 +1,171 @@
-# InsightGlyph
+# **Social Media Keyword Analysis Project**
+
+## **Overview**
+This project focuses on scraping tweets from X.com (formerly Twitter), extracting meaningful keywords from the collected tweets, and visualizing them through word clouds and bar plots. The project allows users to select categories (like Music, Sports, or Business) and scrape tweets from predefined accounts, extracting insights and presenting them visually.
+
+---
+
+## **Features**
+- **Scrape Tweets** from specific accounts under multiple categories.
+- **Preprocess text** to remove stopwords, punctuation, and URLs.
+- **Extract keywords** and analyze their frequency.
+- **Generate visualizations** such as word clouds and bar plots.
+- **Easily extendable** with additional categories or accounts.
+
+---
+
+## **Project Structure**
+```
+/social-media-keyword-analysis
+│
+├── /data                        # Stores scraped tweets and extracted keywords
+│   ├── World_tweets.json        # Raw tweets from the 'World' category
+│   ├── World_keywords.json      # Extracted keywords from World tweets
+│
+├── /categories                  # Configuration for category-to-account mapping
+│   └── categories.json          # Maps categories to X.com accounts
+│
+├── /nltk_data                   # NLTK data directory for stopwords and tokenizers
+│
+├── /src                         # Source code directory
+│   ├── scraper.py               # Code to scrape tweets using Selenium
+│   ├── preprocess.py            # Code to preprocess text and extract keywords
+│   └── visualize.py             # Code to generate word clouds and bar plots
+│
+├── main.ipynb                   # Jupyter notebook for experimenting and EDA
+├── requirements.txt             # Python dependencies
+└── README.md                    # Documentation
+```
+
+---
+
+## **Setup Instructions**
+
+### **Prerequisites**
+1. **Python 3.8+** installed.
+2. **ChromeDriver** installed and added to your PATH.  
+   Download from: https://chromedriver.chromium.org/downloads
+
+### **Install Dependencies**
+1. **Create a virtual environment** (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+2. **Install required libraries**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Download NLTK Data** (stopwords and tokenizers):
+   ```bash
+   python -m nltk.downloader stopwords punkt -d ./nltk_data
+   ```
+
+---
+
+## **Usage Instructions**
+
+### **1. Run the Scraper**
+```bash
+python src/scraper.py
+```
+1. **Select a category** when prompted.
+2. The scraper collects tweets from the selected category and saves them as `data/<category>_tweets.json`.
+
+### **2. Extract Keywords from Tweets**
+```bash
+python src/preprocess.py
+```
+This script:
+1. Loads raw tweets from the `data/` directory.
+2. Extracts the top keywords and saves them as `data/<category>_keywords.json`.
+
+### **3. Visualize Keywords**
+```bash
+python src/visualize.py
+```
+This script:
+1. Loads the extracted keywords from the JSON file.
+2. Generates a **word cloud** and **bar plot** to display keyword frequencies.
+
+### **4. Use Jupyter Notebook for EDA (Optional)**
+```bash
+jupyter notebook main.ipynb
+```
+- Experiment with scraping, preprocessing, and visualization within the notebook.
+
+---
+
+## **Configuration**
+### **Modify `categories.json`**
+To **add or modify categories**, update the `categories.json` file located in the `/categories` directory. Example:
+
+```json
+{
+    "World": ["https://x.com/CNN", "https://x.com/Reuters"],
+    "Music": ["https://x.com/billboard", "https://x.com/Spotify"]
+}
+```
+
+---
+
+## **Example Output**
+
+### **Word Cloud Example:**
+- Displays keywords with larger sizes representing higher frequency.
+
+### **Bar Plot Example:**
+- Shows the most frequent keywords on the x-axis with their frequency on the y-axis.
+
+---
+
+## **Error Handling**
+- **Invalid URL**: If an invalid URL is provided, the scraper skips it.
+- **File Not Found**: If a required JSON file is missing, the script will display an error message.
+- **Invalid JSON Structure**: The program checks for valid `[word, frequency]` pairs when loading keywords.
+
+---
+
+## **Dependencies**
+- **Selenium**: Web scraping automation.
+- **BeautifulSoup**: HTML parsing.
+- **NLTK**: Natural Language Toolkit for text preprocessing.
+- **matplotlib**: Visualization library for bar plots.
+- **wordcloud**: Library to generate word clouds.
+
+---
+
+## **Known Issues**
+1. **Rate Limits**: X.com may impose rate limits on scraping.
+2. **JavaScript Rendering**: Some content may not load properly due to dynamic rendering.
+3. **Chromedriver Compatibility**: Ensure that the **ChromeDriver version matches your installed Chrome browser**.
+
+---
+
+## **Contributing**
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a pull request.
+
+---
+
+## **License**
+This project is licensed under the **MIT License** - see the `LICENSE` file for details.
+
+---
+
+## **Contact**
+If you encounter any issues or have questions, please feel free to reach out.
+
+---
+
+## **Conclusion**
+This project demonstrates a **simple yet effective way to extract insights from social media** using scraping, text preprocessing, and visualization techniques. Feel free to extend the project with new features or categories!
+
+---
+
+This **README.md** covers all essential aspects of the project, including **setup, usage, configuration, and troubleshooting**. Let me know if you need any further modifications!
