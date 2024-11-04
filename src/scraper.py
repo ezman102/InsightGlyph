@@ -93,6 +93,7 @@ def main():
         print("No valid URLs found for the selected category.")
         return
 
+
     print(f"Scraping tweets for category: {category_name}")
     all_tweets = []
 
@@ -100,7 +101,6 @@ def main():
         print(f"Scraping {url}...")
         tweets = scrape_account(url, headless=True)
         all_tweets.extend(tweets)
-
     print(f"Collected {len(all_tweets)} tweets.")
     
     # Save tweets to a JSON file
