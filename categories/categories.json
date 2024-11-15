@@ -1,15 +1,68 @@
 {
-    "World": ["https://x.com/CNN", "https://x.com/Reuters"],
-    "Business": ["https://x.com/federalreserve", "https://x.com/WSJ"],
-    "Arts": ["https://x.com/MetMuseum"],
-    "Lifestyle": ["https://x.com/VogueRunway"],
-    "Opinion": ["https://x.com/NYTOpinion"],
-    "Audio": ["https://x.com/Spotify"],
-    "Games": ["https://x.com/GameSpot", "https://x.com/IGN"],
-    "Cooking": ["https://x.com/nytcooking"],
-    "Wirecutter": ["https://x.com/wirecutter"],
-    "Sports": ["https://x.com/espn", "https://x.com/SkySports"], 
-    "Tech": ["https://x.com/TechCrunch", "https://x.com/wired"],
-    "Music": ["https://x.com/billboard", "https://x.com/rollingstone"]
-  }
-  
+  "World": [
+      "https://x.com/CNN", 
+      "https://x.com/Reuters", "https://x.com/AP", "https://x.com/BBCWorld",
+      "https://x.com/NBCNews", "https://x.com/NYTimesWorld", "https://x.com/AFP", 
+      "https://x.com/guardian", "https://x.com/abcnews", "https://x.com/CTVNews", "https://x.com/NewsHour",
+      "https://x.com/globaltimesnews", "https://x.com/RT_com", "https://x.com/europarl_EN", 
+      "https://x.com/BreakingNews", "https://x.com/ReutersLive", "https://x.com/SkyNews",
+      "https://x.com/thedailybeast", "https://x.com/time"
+  ],
+  "Business": [
+      "https://x.com/WSJ", 
+      "https://x.com/federalreserve", "https://x.com/Business", 
+      "https://x.com/FinancialTimes", "https://x.com/CNBC", "https://x.com/Bloomberg", 
+      "https://x.com/businessinsider", "https://x.com/MarketWatch", "https://x.com/economics",
+      "https://x.com/forbes", "https://x.com/TheEconomist", "https://x.com/YahooFinance",
+      "https://x.com/smallbiztrends", "https://x.com/NASDAQ", "https://x.com/SPGlobal",
+      "https://x.com/SchwabResearch", "https://x.com/WSJMarkets", "https://x.com/morningstarinc",
+      "https://x.com/IBDinvestors", "https://x.com/BizTimesMedia"
+  ],
+  "Music": [
+      "https://x.com/billboard", "https://x.com/rollingstone", "https://x.com/NME", "https://x.com/pitchfork",
+      "https://x.com/MusicWeek", "https://x.com/ComplexMusic", "https://x.com/MTV",
+      "https://x.com/BBCR1", "https://x.com/BET", "https://x.com/AppleMusic", "https://x.com/Spotify",
+      "https://x.com/rapradar", "https://x.com/soundcloud", "https://x.com/Beats1",
+      "https://x.com/popjustice", "https://x.com/AltPress", "https://x.com/classicfm",
+      "https://x.com/HotNewHipHop", "https://x.com/SONGKICK", "https://x.com/officialcharts"
+  ],
+  "Sports": [
+      "https://x.com/ESPN", "https://x.com/FIFAWorldCup", "https://x.com/NBA", "https://x.com/MLB",
+      "https://x.com/NFL", "https://x.com/Olympics", "https://x.com/UFC", "https://x.com/NHL",
+      "https://x.com/espnfc", "https://x.com/skyfootball", "https://x.com/F1", "https://x.com/NBAGLeague",
+      "https://x.com/ICC", "https://x.com/rugbyworldcup", "https://x.com/LPGA", "https://x.com/NASCAR",
+      "https://x.com/NCAAFootball", "https://x.com/cricketworldcup", "https://x.com/espnW",
+      "https://x.com/MotoGP"
+  ],
+  "Technology": [
+      "https://x.com/verge", "https://x.com/wired", "https://x.com/TechCrunch", "https://x.com/gizmodo",
+      "https://x.com/engadget", "https://x.com/CNET", "https://x.com/zdnet", "https://x.com/arstechnica",
+      "https://x.com/mashable", "https://x.com/digitaltrends", "https://x.com/recode",
+      "https://x.com/VentureBeat", "https://x.com/thenextweb", "https://x.com/slashdot",
+      "https://x.com/macrumors", "https://x.com/gsmarena", "https://x.com/androidcentral",
+      "https://x.com/hardwarezone", "https://x.com/9to5mac", "https://x.com/PCMag"
+  ],
+  "Games": [
+      "https://x.com/IGN", "https://x.com/GameSpot", "https://x.com/Kotaku", "https://x.com/Eurogamer",
+      "https://x.com/TheVerge", "https://x.com/Polygon", "https://x.com/GamesRadar", "https://x.com/PCGamer",
+      "https://x.com/Gamasutra", "https://x.com/Shacknews", "https://x.com/Destructoid", "https://x.com/Joystiq",
+      "https://x.com/PlayStation", "https://x.com/Xbox", "https://x.com/Nintendo", "https://x.com/Steam",
+      "https://x.com/Blizzard_Ent", "https://x.com/rockpapershotgun", "https://x.com/Eurogamer_net",
+      "https://x.com/CGMagazine"
+  ],
+  "Arts": [
+      "https://x.com/ArtForum", "https://x.com/TheArtNewspaper", "https://x.com/DesignBoom", "https://x.com/Hyperallergic",
+      "https://x.com/Artnet", "https://x.com/MuseumofModernArt", "https://x.com/TheMet", "https://x.com/ArtReview",
+      "https://x.com/ArtBasel", "https://x.com/ArtNet", "https://x.com/LouvreMuseum", "https://x.com/FriezeArtFair",
+      "https://x.com/ArtSpace", "https://x.com/MOMA", "https://x.com/ArtSleuth", "https://x.com/ArtCritique",
+      "https://x.com/DesignMuseum", "https://x.com/BrooklynMuseum", "https://x.com/Sothebys",
+      "https://x.com/ChristiesAuction"
+  ],
+  "Lifestyle": [
+      "https://x.com/OprahMag", "https://x.com/real_simple", "https://x.com/martha_stewart", "https://x.com/Shape_Magazine",
+      "https://x.com/bonappetit", "https://x.com/gq", "https://x.com/Elle", "https://x.com/Harper'sBazaar",
+      "https://x.com/GoodHousekeeping", "https://x.com/vogue", "https://x.com/MarieClaire", "https://x.com/healthmag",
+      "https://x.com/FitnessMagazine", "https://x.com/Refinery29", "https://x.com/Pinterest", "https://x.com/ApartmentTherapy",
+      "https://x.com/TheKitchn", "https://x.com/Goop", "https://x.com/WomensHealthMag", "https://x.com/TravelLeisure"
+  ]
+}

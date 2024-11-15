@@ -19,18 +19,12 @@ This project focuses on scraping tweets from X.com (formerly Twitter), extractin
 /social-media-keyword-analysis
 │
 ├── /data                        # Stores scraped tweets and extracted keywords
-│   ├── World_tweets.json        # Raw tweets from the 'World' category
-│   ├── World_keywords.json      # Extracted keywords from World tweets
 │
 ├── /categories                  # Configuration for category-to-account mapping
-│   └── categories.json          # Maps categories to X.com accounts
 │
 ├── /nltk_data                   # NLTK data directory for stopwords and tokenizers
 │
 ├── /src                         # Source code directory
-│   ├── scraper.py               # Code to scrape tweets using Selenium
-│   ├── preprocess.py            # Code to preprocess text and extract keywords
-│   └── visualize.py             # Code to generate word clouds and bar plots
 │
 ├── main.ipynb                   # Jupyter notebook for experimenting and EDA
 ├── requirements.txt             # Python dependencies
