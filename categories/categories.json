@@ -1,7 +1,7 @@
 {
     "World": [
         "https://x.com/CNN", 
-        "https://x.com/Reuters", "https://x.com/AP", "https://x.com/BBCWorld",
+        "https://x.com/Reuters", "https://x.com/BBCWorld",
         "https://x.com/NBCNews", "https://x.com/NYTimesWorld", "https://x.com/AFP", 
         "https://x.com/guardian", "https://x.com/abcnews", "https://x.com/CTVNews", "https://x.com/NewsHour",
         "https://x.com/globaltimesnews", "https://x.com/RT_com", "https://x.com/europarl_EN", 
@@ -39,11 +39,11 @@
         "https://x.com/TheVerge", "https://x.com/Polygon", "https://x.com/GamesRadar", "https://x.com/PCGamer",
         "https://x.com/Shacknews", "https://x.com/Destructoid",
         "https://x.com/PlayStation", "https://x.com/Xbox", "https://x.com/Nintendo", "https://x.com/Steam",
-        "https://x.com/Blizzard_Ent", 
+        "https://x.com/Blizzard_Ent"
     ],
     "Arts": [
-        "https://x.com/ArtForum", "https://x.com/TheArtNewspaper", "https://x.com/DesignBoom", "https://x.com/Hyperallergic",
+        "https://x.com/ArtForum", "https://x.com/DesignBoom", "https://x.com/Hyperallergic",
         "https://x.com/Artnet", "https://x.com/ArtBasel", "https://x.com/ArtNet",
-        "https://x.com/ArtSpace", "https://x.com/DesignMuseum", "https://x.com/BrooklynMuseum", "https://x.com/Sothebys",
-    ],
+        "https://x.com/ArtSpace", "https://x.com/DesignMuseum", "https://x.com/BrooklynMuseum", "https://x.com/Sothebys"
+    ]
 }
