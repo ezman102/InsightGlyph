@@ -17,16 +17,12 @@ This project focuses on scraping tweets from X.com (formerly Twitter), extractin
 ## **Project Structure**
 ```
 /social-media-keyword-analysis
-│
 ├── /data                        # Stores scraped tweets and extracted keywords
-│
+├── /image                       # Stores visualization
 ├── /categories                  # Configuration for category-to-account mapping
-│
 ├── /nltk_data                   # NLTK data directory for stopwords and tokenizers
-│
 ├── /src                         # Source code directory
-│
-├── main.ipynb                   # Jupyter notebook for experimenting and EDA
+├── main.ipynb                   # Main Jupyter notebook 
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Documentation
 ```
@@ -56,6 +52,12 @@ This project focuses on scraping tweets from X.com (formerly Twitter), extractin
 
 ## **Usage Instructions**
 
+### ** Use Jupyter Notebook (Recommended)**
+```bash
+jupyter notebook main.ipynb
+```
+- Experiment with scraping, preprocessing, and visualization all in one within the notebook.
+
 ### **1. Run the Scraper**
 ```bash
 python src/scraper.py
@@ -78,12 +80,6 @@ python src/visualize.py
 This script:
 1. Loads the extracted keywords from the JSON file.
 2. Generates a **word cloud** and **bar plot** to display keyword frequencies.
-
-### **4. Use Jupyter Notebook for EDA (Optional)**
-```bash
-jupyter notebook main.ipynb
-```
-- Experiment with scraping, preprocessing, and visualization within the notebook.
 
 ---
 
